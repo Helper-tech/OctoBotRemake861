@@ -15,7 +15,7 @@ const animalEmojis = [
 ];
 
 const itemPrices = {
-    "magicpotion": 10000000000,
+    "magicpotion": 1000000000000,
     "vitamin-d": 50000000,
     "powerpotion": 80000000,
     "rockpotion": 500000000,
@@ -46,12 +46,12 @@ const itemDescriptions = {
 
 const itemLogic = {
     "magicpotion": (pet, amount) => {
-        pet.exp += 15 * amount;
-        pet.attack += 5 * amount;
-        pet.defense += 5 * amount;
-        pet.speed += 1 * amount;
+        pet.exp += 20 * amount;
+        pet.attack += 20 * amount;
+        pet.defense += 20 * amount;
+        pet.speed += 20 * amount;
         pet.hp += 1000 * amount;
-        return { pet, change: `added ${5 * amount} to all stats` };
+        return { pet, change: `added ${20 * amount} to all stats` };
     },
     "vitamin-d": (pet, amount) => {
         const change = 5 * amount;
