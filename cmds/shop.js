@@ -219,11 +219,11 @@ module.exports = {
         petData[userId] = updatedPet;
 
         // Check if pet stats exceed maximum values and adjust if necessary
-        if (petData[userId].attack > 2000) petData[userId].attack = 2000; // Max attack
-        if (petData[userId].hp > 10000) petData[userId].hp = 10000; // Max HP
-        if (petData[userId].defense > 1500) petData[userId].defense = 1500; // Max defense
-        if (petData[userId].speed > 1000) petData[userId].speed = 1000; // Max defense
-if (petData[userId].exp > 9999) petData[userId].exp = 9999;
+        if (petData[userId].attack > 20000000) petData[userId].attack = 20000000; // Max attack
+        if (petData[userId].hp > 100000000) petData[userId].hp = 100000000; // Max HP
+        if (petData[userId].defense > 15000000) petData[userId].defense = 15000000; // Max defense
+        if (petData[userId].speed > 10000000) petData[userId].speed = 10000000; // Max defense
+if (petData[userId].exp > 99999999) petData[userId].exp = 99999999;
         // Write the updated pet data to the file
         savePets(petData);
 
